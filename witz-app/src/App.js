@@ -2,6 +2,20 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import * as firebase from 'firebase';
+
+
+var config = {
+  apiKey: "AIzaSyDqT-QUqiy-ezZzKU2dNtcFfpssXVZL9D8",
+  authDomain: "witz-2fc59.firebaseapp.com",
+  databaseURL: "https://witz-2fc59.firebaseio.com",
+  projectId: "witz-2fc59",
+  storageBucket: "witz-2fc59.appspot.com",
+  messagingSenderId: "433689412056"
+};
+
+firebase.initializeApp(config);
+
 class App extends Component {
   render() {
     return (
